@@ -4,32 +4,33 @@
 // 5 -> Пятница
 
 Console.Write("введите номер дня недели: ");
-string day = Console.ReadLine();
-if(day == "1")
+//string day = Console.ReadLine();
+int day = Convert.ToInt32(Console.ReadLine());
+if(day == 1)
 {
   Console.Write("Понедельник");
 }
-else if(day == "2")
+else if(day == 2)
 {
   Console.Write("Вторник");
 }
-else if(day == "3")
+else if(day == 3)
 {
   Console.Write("Среда");
 }
-else if(day == "4")
+else if(day == 4)
 {
   Console.Write("Четверг");
 }
-else if(day == "5")
+else if(day == 5)
 {
   Console.Write("Пятница");
 }
-else if(day == "6")
+else if(day == 6)
 {
   Console.Write("Суббота");
 }
-else if(day == "7")
+else if(day == 7)
 {
   Console.Write("Воскресенье");
 }
