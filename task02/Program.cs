@@ -10,13 +10,16 @@ Console.Write("введите второе число: ");
 int b = Convert.ToInt32(Console.ReadLine());
 
 int max = a;
+int min = b;
 if (a > b)
 {
   max = a;
-  Console.Write($"Максимальное число {max}");
+  min = b;
+  Console.Write($"Максимальное число {max}, а Минимальное число {min}");
 }
 else
 {
   max = b;
-  Console.Write($"Максимальное число {max}");
+  min = a;
+  Console.Write($"Максимальное число {max}, а Минимальное число {min}");
 }
