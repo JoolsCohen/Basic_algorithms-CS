@@ -5,13 +5,11 @@
 
 Console.Write("введите первое число: ");
 int a = Convert.ToInt32(Console.ReadLine());
-
 Console.Write("введите второе число: ");
 int b = Convert.ToInt32(Console.ReadLine());
-
 if (a > b)
 {
-    Console.Write($"Максимальное число {a}, а Минимальное число {b}");
+  Console.Write($"Максимальное число {a}, а Минимальное число {b}");
 }
 else
 {
