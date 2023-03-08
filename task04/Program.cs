@@ -13,20 +13,14 @@ Console.Write("введите третье число: ");
 int c = Convert.ToInt32(Console.ReadLine());
 
 int max = a;
-if (a > b)
-{
-  max = a;
-}
-else
+
+if (max < b)
 {
   max = b;
 }
+
 if (max < c)
 {
   max = c;
-  Console.Write($"Максимальное число {max}");
 }
-else
-{
-  Console.Write($"Максимальное число {max}");
-}
+Console.Write($"Максимальное число {max}");
