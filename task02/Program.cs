@@ -9,17 +9,11 @@ int a = Convert.ToInt32(Console.ReadLine());
 Console.Write("введите второе число: ");
 int b = Convert.ToInt32(Console.ReadLine());
 
-int max = a;
-int min = b;
 if (a > b)
 {
-  max = a;
-  min = b;
-  Console.Write($"Максимальное число {max}, а Минимальное число {min}");
+    Console.Write($"Максимальное число {a}, а Минимальное число {b}");
 }
 else
 {
-  max = b;
-  min = a;
-  Console.Write($"Максимальное число {max}, а Минимальное число {min}");
+  Console.Write($"Максимальное число {b}, а Минимальное число {a}");
 }
