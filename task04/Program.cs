@@ -5,22 +5,11 @@
 
 Console.Write("введите первое число: ");
 int a = Convert.ToInt32(Console.ReadLine());
-
 Console.Write("введите второе число: ");
 int b = Convert.ToInt32(Console.ReadLine());
-
 Console.Write("введите третье число: ");
 int c = Convert.ToInt32(Console.ReadLine());
-
 int max = a;
-
-if (max < b)
-{
-  max = b;
-}
-
-if (max < c)
-{
-  max = c;
-}
+if (max < b) max = b;
+if (max < c) max = c;
 Console.Write($"Максимальное число {max}");
