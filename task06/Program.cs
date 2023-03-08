@@ -8,9 +8,9 @@ int num = Convert.ToInt32(Console.ReadLine());
 
 if (num % 2 == 1)
 {
-  Console.Write("Число " + num + " является: НЕЧЁТНЫМ");
+  Console.Write("Число " + num + " НЕ ЯВЛЯЕТСЯ четным");
 }
 else
 {
-  Console.Write("Число " + num + " является: ЧЁТНЫМ");
+  Console.Write("Число " + num + " ЯВЛЯЕТСЯ четным");
 }
