@@ -5,6 +5,7 @@
 Console.WriteLine("Введите число:  ");
 int num = Convert.ToInt32(Console.ReadLine());
 int i = 1;
+if (num == 1) Console.WriteLine("Нет в "+num+" четных чисел, давай по новой!");
 while (i <= num)
 {
   if (i % 2 == 0)
