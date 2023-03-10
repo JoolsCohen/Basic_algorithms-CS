@@ -6,11 +6,11 @@
 Console.Write("введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (num % 2 == 1)
+if (num % 2 == 0)
 {
-  Console.Write("Число " + num + " НЕ ЯВЛЯЕТСЯ четным");
+  Console.Write("Число " + num + " ЯВЛЯЕТСЯ четным");
 }
 else
 {
-  Console.Write("Число " + num + " ЯВЛЯЕТСЯ четным");
+  Console.Write("Число " + num + " НЕ ЯВЛЯЕТСЯ четным");
 }
