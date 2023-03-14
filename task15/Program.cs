@@ -54,13 +54,13 @@
 //------------------------------------------
 // 3 РЕШЕНИЕ (ОПТИМАЛЬНОЕ)
 Console.Write("Введите номер дня недели: ");
-int num = int.Parse(Console.ReadLine());
-if (num >= 1 && num <= 5)
+int day = Convert.ToInt32(Console.ReadLine());
+if (day >= 1 && day <= 5)
 {
   Console.Write(" Нет, это не выходной");
 }
-else if (num >= 6 && num <= 7)
+else if (day >= 6 && day <= 7)
 {
-  Console.Write(" Да, это выходной");
+  Console.Write("Отдыхаем! Выходной!");
 }
-else Console.Write(" Не существует такого дня недели");
+else Console.WriteLine("Нет такого");
