@@ -27,10 +27,10 @@ int Multiplicity(int number1, int number2)
     return number1 % number2;    
 }
 
-int ReadConsole()
-{
-    var str = Console.ReadLine();
-    int number = Convert.ToInt32(str);
+// int ReadConsole()
+// {
+//     var str = Console.ReadLine();
+//     int number = Convert.ToInt32(str);
 
-    return number;
-}
+//     return number;
+// }
