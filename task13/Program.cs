@@ -18,6 +18,7 @@ if (ThirdDigit(number1) == -1)
   Console.WriteLine("третьей цифры нет");
 else
   Console.WriteLine($"И третья цифра этого числа... Барабанная дробь: Тадаааам {ThirdDigit(number1)}!");
+
 int ThirdDigit(int number)
 {
   int result = -1;
