@@ -6,21 +6,21 @@
 
 //------------ПЕРВОЕ РАБОЧЕЕ РЕШЕНИЕ-------------------------------------------------------------------------
 
-Console.WriteLine("Введи пять циферок: ");
-string num = Console.ReadLine();
-int size = num.Length;
+// Console.WriteLine("Введи пять циферок: ");
+// string num = Console.ReadLine();
+// int size = num.Length;
 
-Palindrome(num);
+// Palindrome(num);
 
-void Palindrome(string number)
-{
-  if (size == 5)
-{
-    if (number[0] == number[4] && number[1] == number[3]) Console.WriteLine($"Да, это {number} - Палиндром");
-    else Console.WriteLine($"Нет, это {number} - не палиндром");
-}
-else Console.WriteLine($"А это {number} что за динозавр? Написано же - ПЯТЬ циферок");    
-}
+// void Palindrome(string number)
+// {
+//   if (size == 5)
+// {
+//     if (number[0] == number[4] && number[1] == number[3]) Console.WriteLine($"Да, это {number} - Палиндром");
+//     else Console.WriteLine($"Нет, это {number} - не палиндром");
+// }
+// else Console.WriteLine($"А это {number} что за динозавр? Написано же - ПЯТЬ циферок");    
+// }
 
 //-----------------------------------------------------------------------------------------------------------
 //------------ВТОРОЕ РАБОЧЕЕ РЕШЕНИЕ-------------------------------------------------------------------------
