@@ -8,17 +8,17 @@ Console.Write("Первая точка A: ");
 int xA = Convert.ToInt32(Console.ReadLine());
 Console.Write("Вторач точка A: ");
 int yA = Convert.ToInt32(Console.ReadLine());
-Console.Write("Первая точка B: ");
+Console.Write("Третья точка А: ");
 int zA = Convert.ToInt32(Console.ReadLine());
 Console.Write("Вторая точка B: ");
 int xB = Convert.ToInt32(Console.ReadLine());
 Console.Write("Первая точка B: ");
 int yB = Convert.ToInt32(Console.ReadLine());
-Console.Write("Вторая точка B: ");
+Console.Write("Третья точка B: ");
 int zB = Convert.ToInt32(Console.ReadLine());
 
 double distance = Distance(xA,yA,zA,xB,yB,zB);
-Console.WriteLine(distance);
+Console.WriteLine("Расстояние между этими точками в 3D пространстве = "+ distance);
 
 double Distance(int x1,int y1,int z1, int x2, int y2, int z2)
 {
