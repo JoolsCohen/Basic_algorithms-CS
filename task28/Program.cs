@@ -47,3 +47,23 @@ int Fact(int num)
 
 //     return result;
 // }
+//----------------3 РЕШЕНИЕ--------------------------
+// Console.WriteLine("Введите целое число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// int factorial = Factorial(number);
+// Console.WriteLine($"Факториал {number} = {factorial}");
+
+
+// int Factorial(int num)
+// {
+//     int product = 1;
+//     for (int count = 2; count <= num; count++)
+//     {
+//         checked
+//         {
+//             product = product * count;
+//         }
+//     }
+//     return product;
+// }
