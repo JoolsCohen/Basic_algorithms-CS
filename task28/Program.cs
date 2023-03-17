@@ -15,7 +15,7 @@ int Fact(int num)
   int res = 1;
   for (int i = 1; i <= num; i++)
   {
-    res *= i; //sum = sum+i;
+    res *= i; //res = res+i;
   }
   return res;
 }
