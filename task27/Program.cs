@@ -9,13 +9,12 @@ int sumDigit = SumDigit(num);
 
 int SumDigit(int a)
 {
-  int sum = 0;
+  int num = 0;
   while (a > 0)
   {
-    int num = a % 10;
+    num += a % 10;
     a = a / 10;
-    sum = sum + num;
   }
-  return sum;
+  return num;
 }
-Console.WriteLine("сумма всех цифр в числе" + num + " равна: " + sumDigit);
+Console.WriteLine("сумма всех цифр в числе " + num + " равна: " + sumDigit);
