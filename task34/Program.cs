@@ -20,7 +20,7 @@ void PrintArray(int[] arr)
     Console.WriteLine("[{0}]", string.Join(", ", arr));
 }
 
-void PosNums(int[] arr)
+void EvenNums(int[] arr)
 {
   int count = 0;
   for (int i = 0; i < arr.Length; i++)
@@ -32,4 +32,4 @@ void PosNums(int[] arr)
 
 int [] array = CreateArrayRndInt(10, 100, 999);
 PrintArray(array);
-PosNums(array);
+EvenNums(array);

@@ -20,7 +20,7 @@ void PrintArray(int[] arr)
   Console.WriteLine("[{0}]", string.Join(", ", arr));
 }
 
-int SumDigits(int[] arr)
+int SumOddDigits(int[] arr)
 {
   int sum = 0;
   for (int i = 0; i < arr.Length; i++)
@@ -34,7 +34,7 @@ int[] array = CreateArrayRndInt(10, -10, 10);
 
 PrintArray(array);
 
-int amt = SumDigits(array); //amt - amount
+int amt = SumOddDigits(array); //amt - amount
 
 Console.WriteLine($"Cумма элементов, стоящих на нечётных позициях = {amt}.");
 //-------------------------------------------------------ВТОРОЕ РЕШЕНИЕ-------------------------------------------------------
