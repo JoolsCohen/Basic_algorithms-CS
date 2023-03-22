@@ -25,7 +25,6 @@ void FindDiff(double[] arr)
   double min = arr[0];
   double max = arr[0];
   double diff = 0;
-
   for (int i = 0; i < arr.Length; i++)
   {
     if (arr[i] > max) max = arr[i];

@@ -8,7 +8,6 @@ int[] CreateArrayRndInt(int size, int min, int max)
 {
   int[] arr = new int[size];
   Random rnd = new Random();
-
   for (int i = 0; i < arr.Length; i++)
   {
     arr[i] = rnd.Next(min, max + 1);
@@ -21,16 +20,12 @@ void PrintArray(int[] arr)
     Console.WriteLine("[{0}]", string.Join(", ", arr));
 }
 
-
 void PosNums(int[] arr)
 {
   int count = 0;
   for (int i = 0; i < arr.Length; i++)
   {
-    if (arr[i] % 2 == 0)
-    {
-      count++;
-    }
+    if (arr[i] % 2 == 0) count++;
   }
   Console.WriteLine($"Количество четных чисел в массиве: {count}.");
 }

@@ -8,7 +8,6 @@ int[] CreateArrayRndInt(int size, int min, int max)
 {
   int[] arr = new int[size];
   Random rnd = new Random();
-
   for (int i = 0; i < arr.Length; i++)
   {
     arr[i] = rnd.Next(min, max + 1);
@@ -26,10 +25,7 @@ int SumDigits(int[] arr)
   int sum = 0;
   for (int i = 0; i < arr.Length; i++)
   {
-    if (i % 2 != 0)
-    {
-      sum = arr[i] + sum;
-    }
+    if (i % 2 != 0) sum = arr[i] + sum;
   }
   return sum;
 }
