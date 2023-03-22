@@ -53,6 +53,7 @@
 // Console.WriteLine(isDayOff(day) ? "Не выходной" : "Выходной");
 //------------------------------------------
 // 3 РЕШЕНИЕ (ОПТИМАЛЬНОЕ)
+Console.Clear();
 Console.Write("Введите номер дня недели: ");
 int day = Convert.ToInt32(Console.ReadLine());
 if (day >= 1 && day <= 5)

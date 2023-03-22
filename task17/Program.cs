@@ -2,7 +2,7 @@
 // координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт
 // номер четверти плоскости, в которой находится эта
 // точка
-
+Console.Clear();
 Console.WriteLine("Введите координаты точки");
 Console.Write("x:");
 int xC = Convert.ToInt32(Console.ReadLine());
