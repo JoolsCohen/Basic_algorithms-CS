@@ -18,25 +18,25 @@ int[] CreateArrayRndInt(int size, int min, int max)
 
 void PrintArray(int[] arr)
 {
-    Console.WriteLine("[{0}]", string.Join(", ", arr));
+  Console.WriteLine("[{0}]", string.Join(", ", arr));
 }
 
 int SumDigits(int[] arr)
 {
-    int sum = 0;
-    for (int i = 0; i < arr.Length; i++)
+  int sum = 0;
+  for (int i = 0; i < arr.Length; i++)
+  {
+    if (i % 2 != 0)
     {
-        if(i % 2 != 0)
-        {
-            sum = arr[i] + sum ;
-        }
+      sum = arr[i] + sum;
     }
-    return sum;
+  }
+  return sum;
 }
 
-int[] array = CreateArrayRndInt(10,-10,10);              
-                                                   
-PrintArray(array);                                
+int[] array = CreateArrayRndInt(10, -10, 10);
+
+PrintArray(array);
 
 int amt = SumDigits(array);
 
