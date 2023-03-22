@@ -28,15 +28,8 @@ void FindDiff(double[] arr)
 
   for (int i = 0; i < arr.Length; i++)
   {
-    if (arr[i] > max)
-    {
-      max = arr[i];
-    }
-
-    if (arr[i] < min)
-    {
-      min = arr[i];
-    }
+    if (arr[i] > max) max = arr[i];
+    if (arr[i] < min) min = arr[i];
   }
   diff = max - min;
   Console.WriteLine($"Разница между максимальным и минимальным элементами массива = {diff}.");
