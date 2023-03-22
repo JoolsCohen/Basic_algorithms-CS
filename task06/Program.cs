@@ -2,7 +2,7 @@
 // 4 -> Да
 // -3 -> Нет
 // 7 -> Нет
-
+Console.Clear();
 Console.Write("введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 

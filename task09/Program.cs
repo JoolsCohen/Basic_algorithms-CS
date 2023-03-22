@@ -4,7 +4,7 @@
 // 78 -> 8
 // 12-> 2
 // 85 -> 8
-
+Console.Clear();
 int num = new Random().Next(10, 100);
 Console.WriteLine($"Случайное число из отрезка 10 - 99 -> {num}");
 int firstDigit = num / 10;

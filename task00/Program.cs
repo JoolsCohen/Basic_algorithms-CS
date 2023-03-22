@@ -9,7 +9,7 @@
 
 // string input = Console.ReadLine();
 // int num = Convert.ToInt32(input);
-
+Console.Clear();
 Console.Write("введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int square = num * num;

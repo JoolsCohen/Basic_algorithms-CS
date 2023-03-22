@@ -2,7 +2,7 @@
 //Напишите программу, которая покажет количество чётных чисел в массиве.
 // [345, 897, 568, 234] -> 2
 
-
+Console.Clear();
 
 int[] CreateArrayRndInt(int size, int min, int max)
 {

@@ -4,7 +4,7 @@
 // программа выводит остаток от деления.
 // 34, 5 -> не кратно, остаток 4
 // 16, 4 -> кратно
-
+Console.Clear();
 Console.Write("Веведите первое число: ");
 int numA = Convert.ToInt32(Console.ReadLine());
 

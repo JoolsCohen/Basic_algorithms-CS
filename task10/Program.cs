@@ -5,6 +5,7 @@
 // 918 -> 1
 // Console.Write("введите первое число: ");
 // int number = Convert.ToInt32(Console.ReadLine());
+Console.Clear();
 int number = new Random().Next(100, 1000);
 Console.WriteLine("Получаем рандомное трехзначное число "+number+"");
 if (number < 0) number = -number;

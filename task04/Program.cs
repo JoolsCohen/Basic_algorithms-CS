@@ -2,7 +2,7 @@
 // 2, 3, 7 -> 7
 // 44, 5, 78 -> 78
 // 22, 3, 79 -> 22
-
+Console.Clear();
 Console.Write("введите первое число: ");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.Write("введите второе число: ");

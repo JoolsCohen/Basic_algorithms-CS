@@ -4,7 +4,7 @@
 // 456 -> 46
 // 782 -> 72
 // 918 -> 98
-
+Console.Clear();
 int number = new Random().Next(100, 1000);
 Console.WriteLine("Получаем рандомное трехзначное число "+number+"");
 
