@@ -67,17 +67,16 @@ string GetBinom(int number)
 //-----------------------------ВТОРОЕ РЕШЕНИЕ--------------------------------------------
 Console.Clear();
 
-int decimal1 = 56;
+int decimal1 = 2;
 int result = DecToBinInt(decimal1);
 
 Console.WriteLine(result);
-
 
 string DecToBinString(int decimalNumber)
 {
     if (decimalNumber == 0 || decimalNumber == 1)
     {
-        return Convert.ToString(decimalNumber);
+        return decimalNumber.ToString();
     } 
 
     string dec = string.Empty;
@@ -102,7 +101,7 @@ int DecToBinInt(int decimalNumber)
     {
         dec = dec + decimalNumber % 2 * i;        
         decimalNumber /= 2; 
-        i *= 10;               
+        i *= 10;              
     }
     return dec;
 }
