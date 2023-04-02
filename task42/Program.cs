@@ -72,21 +72,21 @@ int result = DecToBinInt(decimal1);
 
 Console.WriteLine(result);
 
-string DecToBinString(int decimalNumber)
-{
-    if (decimalNumber == 0 || decimalNumber == 1)
-    {
-        return decimalNumber.ToString();
-    } 
+// string DecToBinString(int decimalNumber)
+// {
+//     if (decimalNumber == 0 || decimalNumber == 1)
+//     {
+//         return decimalNumber.ToString();
+//     } 
 
-    string dec = string.Empty;
-    while (decimalNumber > 0)
-    {
-        dec = decimalNumber % 2 + dec;
-        decimalNumber /= 2;                
-    }
-    return dec;
-}
+//     string dec = string.Empty;
+//     while (decimalNumber > 0)
+//     {
+//         dec = decimalNumber % 2 + dec;
+//         decimalNumber /= 2;                
+//     }
+//     return dec;
+// }
 
 int DecToBinInt(int decimalNumber)
 {
