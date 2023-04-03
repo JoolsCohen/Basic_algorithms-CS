@@ -67,7 +67,7 @@ int GetMinSum(int[] arr)
       result = i;
     }
   }
-  return result = result + 1;
+  return result;
 }
 
 int[,] array2D = CreateMatrixRndInt(m, n, 0, 10);
@@ -80,4 +80,4 @@ int[] rowSum = SumInRow(array2D);
 
 int result = GetMinSum(rowSum);
 
-Console.WriteLine($"Строка с наименьшей суммой элементов {result}");
+Console.WriteLine($"Строка с наименьшей суммой элементов {result+1}"); //+1 для того, чтобы программа выводила ответ не по индексам, то есть не с 0, а по отсчету 1,2,3...

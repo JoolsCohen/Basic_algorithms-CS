@@ -5,38 +5,42 @@
 // 66(0,0,0) 27(0,0,1) 25(0,1,0) 90(0,1,1)
 // 34(1,0,0) 26(1,0,1) 41(1,1,0) 55(1,1,1)
 
-//какая то херня, которую мы не проходили
+int[,,] array3D = Create3DArray(2, 2, 2, 10, 100);
 
-int[,,] threeDArray = Create3DArray(2, 2, 2, 10, 100);
-
-Print3DArray(threeDArray);
+Print3DArray(array3D);
 
 int[,,] Create3DArray(int x, int y, int z, int min, int max)
 {
   int[,,] arr = new int[x, y, z];
   Random rnd = new Random();
-
-  for (int i = 0; i < arr.GetLength(0); i++) //длинна
+  if (x * y * z < 99)
   {
-    for (int j = 0; j < arr.GetLength(1); j++) //высота
+    for (int i = 0; i < arr.GetLength(0); i++)
     {
-      for (int k = 0; k < arr.GetLength(2); k++) //ширина
+      for (int j = 0; j < arr.GetLength(1); j++)
       {
-        int next = 0;
-        while (true)
+        for (int k = 0; k < arr.GetLength(2); k++)
         {
-          next = rnd.Next(min, max);
-          if (!Contains(arr, next))
-            break;
+          int next = 0;
+          while (true)
+          {
+            next = rnd.Next(min, max);
+            if (!unicumInArr(arr, next))
+              break;
+          }
+          arr[i, j, k] = next;
         }
-        arr[i, j, k] = next;
       }
     }
+  }
+  else
+  {
+    Console.WriteLine("Слишком большой массив для уникальных двухзначных чисел");
   }
   return arr;
 }
 
-bool Contains(int[,,] arr, int num)
+bool unicumInArr(int[,,] arr, int num)
 {
   for (int i = 0; i < arr.GetLength(0); i++)
   {
@@ -64,3 +68,4 @@ void Print3DArray(int[,,] arr)
     }
   }
 }
+
