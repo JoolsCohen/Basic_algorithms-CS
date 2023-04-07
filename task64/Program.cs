@@ -14,6 +14,16 @@ void NaturalNums(int num)
     Console.Write($"{num}");
     return;
   }
+
+  bool NegNumChecking(int num)
+{
+  return (num < 0);
+}
+if (NegNumChecking(num))
+{
+  Console.WriteLine("Вы ввели отрицательные числа!");
+  return;
+}
   Console.Write($"{num}, ");
   NaturalNums(num - 1);
 }

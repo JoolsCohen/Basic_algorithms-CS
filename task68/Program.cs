@@ -12,8 +12,8 @@ int n = Convert.ToInt32(Console.ReadLine());
 int FunctionAckermann(int m, int n)
 {
   if (m == 0) return n + 1;
-  else if (n == 0) return FunctionAckermann(m - 1, 1);
-  else return FunctionAckermann(m - 1, FunctionAckermann(m, n - 1));
+  if (n == 0) return FunctionAckermann(m - 1, 1);
+  return FunctionAckermann(m - 1, FunctionAckermann(m, n - 1));
 }
 bool NegNumChecking(int num1, int num2)
 {
